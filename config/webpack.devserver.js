@@ -4,7 +4,8 @@ const { merge } = require('webpack-merge');
 const htmlwebpackPlugin = new HtmlWebpackPlugin({
     filename: 'index.html',
     inject: true,
-    template: path.join(__dirname, '../public/index.html')
+    template: path.join(__dirname, '../public/index.html'),
+    // publicPath: '',
 });
 
 const devserverConfig = {
@@ -12,6 +13,7 @@ const devserverConfig = {
         main: path.resolve(__dirname, '../src/App.tsx'),
     },
     devtool: 'source-map',
+    mode: 'development',
     resolve: {
         extensions: ['.tsx', '.ts', '.jsx', '.js'],  //resolve these extensions in order
     },
