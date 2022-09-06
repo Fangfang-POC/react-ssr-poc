@@ -1,2 +1,2 @@
-# React18-poc
-A POC to try all the new features of React 18
+# React-ssr-poc
+A POC to try the basic features of server side rendering(SSR).
